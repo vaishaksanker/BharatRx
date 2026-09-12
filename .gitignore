@@ -1,0 +1,104 @@
+# ==========================================
+# BharatRx Git Ignore Policy
+# ==========================================
+
+# 1. Environment & Secrets (NEVER COMMIT SECRETS)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env
+*.pem
+*.key
+*.cert
+*.crt
+secrets.json
+config.secret.json
+
+# 2. Real Patient & Sensitive Medical Data (SECURITY MANDATE)
+data/medical/private/*
+data/medical/raw/*
+data/demo/real_patient_*
+*.dcm
+*.dicom
+
+# 3. Python & Virtual Environments
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+.eggs/
+
+# 4. Node.js & Web Frontend / Backend
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.lerna-changed
+.pnpm-debug.log*
+
+# 5. Build & Output Directories
+dist/
+dist-ssr/
+build/
+out/
+.next/
+.nuxt/
+.vuepress/dist
+*.tsbuildinfo
+
+# 6. Database Files & Local Storage
+*.sqlite
+*.sqlite3
+*.db
+*.sqlite-journal
+*.ldf
+*.mdf
+
+# 7. Uploads & Generated Media
+data/uploads/*
+!data/uploads/.gitkeep
+temp/
+tmp/
+*.tmp
+
+# 8. Logs & Diagnostics
+logs/
+*.log
+*.syslog
+
+# 9. IDE & Editor Specific Configuration
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+
+# 10. OS Generated Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
