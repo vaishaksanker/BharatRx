@@ -1,0 +1,28 @@
+{
+  "_comment": "allergy_groups: patient-stated allergy -> generic medicines in that family. cross_reactivity: related families that carry a lower but real risk.",
+  "allergy_groups": {
+    "Penicillin": ["Amoxicillin", "Ampicillin", "Cloxacillin", "Piperacillin", "Benzylpenicillin", "Phenoxymethylpenicillin", "Clavulanic Acid"],
+    "Sulfa": ["Sulfamethoxazole", "Cotrimoxazole", "Sulfasalazine", "Sulfadiazine"],
+    "NSAID": ["Ibuprofen", "Diclofenac", "Naproxen", "Aspirin", "Ketorolac", "Aceclofenac", "Mefenamic Acid", "Indomethacin"],
+    "Aspirin": ["Aspirin"],
+    "Cephalosporin": ["Cefixime", "Ceftriaxone", "Cefuroxime", "Cephalexin", "Cefpodoxime"],
+    "Macrolide": ["Azithromycin", "Clarithromycin", "Erythromycin"],
+    "Quinolone": ["Ciprofloxacin", "Levofloxacin", "Ofloxacin", "Norfloxacin"],
+    "Paracetamol": ["Paracetamol"],
+    "Tetracycline": ["Doxycycline", "Tetracycline", "Minocycline"]
+  },
+  "cross_reactivity": {
+    "Penicillin": {
+      "Cephalosporin": {
+        "severity": "MEDIUM",
+        "reason": "Cephalosporins share a beta-lactam ring with penicillins, so a smaller proportion of penicillin-allergic patients also react to them."
+      }
+    },
+    "Aspirin": {
+      "NSAID": {
+        "severity": "MEDIUM",
+        "reason": "Other NSAIDs work through the same pathway and can trigger the same reaction in aspirin-sensitive patients."
+      }
+    }
+  }
+}

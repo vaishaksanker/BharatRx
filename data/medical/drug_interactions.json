@@ -1,0 +1,269 @@
+{
+  "_comment": "Drug-Drug interactions. Keys are GENERIC names. The engine checks both directions (A->B and B->A), so each pair is listed only once.",
+  "Warfarin": {
+    "Ibuprofen": {
+      "severity": "HIGH",
+      "reason": "Both increase bleeding tendency. Ibuprofen also irritates the stomach lining, raising the risk of gastrointestinal bleeding.",
+      "recommendation": "Avoid this combination. Ask the prescribing doctor whether paracetamol is suitable for pain instead."
+    },
+    "Diclofenac": {
+      "severity": "HIGH",
+      "reason": "NSAID added to an anticoagulant markedly increases bleeding risk.",
+      "recommendation": "Review with the prescribing clinician before dispensing."
+    },
+    "Naproxen": {
+      "severity": "HIGH",
+      "reason": "NSAID added to an anticoagulant markedly increases bleeding risk.",
+      "recommendation": "Review with the prescribing clinician before dispensing."
+    },
+    "Aspirin": {
+      "severity": "HIGH",
+      "reason": "Aspirin blocks platelet function while warfarin blocks clotting factors, compounding bleeding risk.",
+      "recommendation": "Only continue if a doctor has specifically intended dual therapy and is monitoring INR."
+    },
+    "Clopidogrel": {
+      "severity": "HIGH",
+      "reason": "Two blood-thinning mechanisms combined substantially increase bleeding risk.",
+      "recommendation": "Confirm the combination is intentional and monitored."
+    },
+    "Ciprofloxacin": {
+      "severity": "HIGH",
+      "reason": "Ciprofloxacin can raise warfarin levels, increasing INR and bleeding risk.",
+      "recommendation": "Request INR monitoring or an alternative antibiotic."
+    },
+    "Fluconazole": {
+      "severity": "HIGH",
+      "reason": "Fluconazole strongly inhibits warfarin metabolism, raising INR.",
+      "recommendation": "Avoid if possible; otherwise monitor INR closely."
+    },
+    "Metronidazole": {
+      "severity": "HIGH",
+      "reason": "Metronidazole increases warfarin effect and bleeding risk.",
+      "recommendation": "Discuss an alternative antibiotic with the prescriber."
+    },
+    "Rifampicin": {
+      "severity": "HIGH",
+      "reason": "Rifampicin speeds up warfarin breakdown, reducing its effect and risking clot formation.",
+      "recommendation": "Warfarin dose adjustment with INR monitoring is required."
+    },
+    "Phenytoin": {
+      "severity": "HIGH",
+      "reason": "Unpredictable two-way interaction affecting both warfarin and phenytoin levels.",
+      "recommendation": "Specialist review and monitoring required."
+    },
+    "Azithromycin": {
+      "severity": "MEDIUM",
+      "reason": "Macrolide antibiotics can modestly increase warfarin effect.",
+      "recommendation": "Consider INR check during and after the antibiotic course."
+    }
+  },
+  "Losartan": {
+    "Ibuprofen": {
+      "severity": "HIGH",
+      "reason": "NSAIDs blunt the blood-pressure-lowering effect of losartan and, combined with it, reduce blood flow to the kidneys.",
+      "recommendation": "Avoid regular NSAID use. Paracetamol is usually the safer analgesic."
+    },
+    "Diclofenac": {
+      "severity": "HIGH",
+      "reason": "Same NSAID mechanism: reduced antihypertensive effect plus added kidney strain.",
+      "recommendation": "Review with the prescribing clinician."
+    },
+    "Spironolactone": {
+      "severity": "HIGH",
+      "reason": "Both raise blood potassium; together they can cause dangerous hyperkalaemia.",
+      "recommendation": "Potassium and kidney function monitoring required."
+    },
+    "Potassium Chloride": {
+      "severity": "HIGH",
+      "reason": "Losartan already retains potassium; adding a supplement can cause hyperkalaemia.",
+      "recommendation": "Confirm with the prescriber and check serum potassium."
+    }
+  },
+  "Enalapril": {
+    "Ibuprofen": {
+      "severity": "HIGH",
+      "reason": "ACE inhibitor plus NSAID reduces blood pressure control and kidney perfusion.",
+      "recommendation": "Prefer paracetamol; review with the prescriber."
+    },
+    "Spironolactone": {
+      "severity": "HIGH",
+      "reason": "Combined potassium retention can cause hyperkalaemia.",
+      "recommendation": "Monitor serum potassium."
+    }
+  },
+  "Sildenafil": {
+    "Nitroglycerin": {
+      "severity": "HIGH",
+      "reason": "Both dilate blood vessels. Together they can cause a sudden, severe drop in blood pressure.",
+      "recommendation": "This combination is contraindicated. Do not dispense without clinician review."
+    },
+    "Isosorbide Dinitrate": {
+      "severity": "HIGH",
+      "reason": "Nitrate plus sildenafil can cause life-threatening hypotension.",
+      "recommendation": "This combination is contraindicated. Do not dispense without clinician review."
+    }
+  },
+  "Simvastatin": {
+    "Clarithromycin": {
+      "severity": "HIGH",
+      "reason": "Clarithromycin blocks simvastatin breakdown, raising drug levels and the risk of muscle damage (rhabdomyolysis).",
+      "recommendation": "Pause the statin during the antibiotic course, or use an alternative antibiotic."
+    },
+    "Erythromycin": {
+      "severity": "HIGH",
+      "reason": "Same metabolic blockade leading to statin toxicity risk.",
+      "recommendation": "Pause the statin or choose another antibiotic."
+    },
+    "Itraconazole": {
+      "severity": "HIGH",
+      "reason": "Azole antifungals sharply raise simvastatin levels.",
+      "recommendation": "Avoid the combination."
+    },
+    "Gemfibrozil": {
+      "severity": "HIGH",
+      "reason": "Both affect muscle tissue; combined risk of rhabdomyolysis is high.",
+      "recommendation": "Avoid; a different lipid-lowering combination is preferred."
+    },
+    "Amlodipine": {
+      "severity": "MEDIUM",
+      "reason": "Amlodipine raises simvastatin levels; doses above 20 mg are not advised.",
+      "recommendation": "Confirm the simvastatin dose is within the safe limit."
+    }
+  },
+  "Atorvastatin": {
+    "Clarithromycin": {
+      "severity": "MEDIUM",
+      "reason": "Raised statin exposure increases muscle toxicity risk.",
+      "recommendation": "Watch for muscle pain or weakness during the antibiotic course."
+    }
+  },
+  "Metformin": {
+    "Alcohol": {
+      "severity": "MEDIUM",
+      "reason": "Alcohol adds to metformin's small risk of lactic acidosis and can cause low blood sugar.",
+      "recommendation": "Advise limiting alcohol while on metformin."
+    },
+    "Furosemide": {
+      "severity": "MEDIUM",
+      "reason": "Dehydration from a diuretic can reduce kidney clearance of metformin.",
+      "recommendation": "Ensure adequate hydration and periodic kidney function checks."
+    }
+  },
+  "Clopidogrel": {
+    "Omeprazole": {
+      "severity": "MEDIUM",
+      "reason": "Omeprazole reduces the activation of clopidogrel, potentially lowering its antiplatelet effect.",
+      "recommendation": "Pantoprazole is generally preferred as the acid-suppressing agent."
+    },
+    "Aspirin": {
+      "severity": "MEDIUM",
+      "reason": "Dual antiplatelet therapy increases bleeding risk; sometimes intentional after stenting.",
+      "recommendation": "Confirm the combination is deliberate and time-limited."
+    }
+  },
+  "Aspirin": {
+    "Ibuprofen": {
+      "severity": "MEDIUM",
+      "reason": "Ibuprofen can block the heart-protective antiplatelet action of low-dose aspirin, and both irritate the stomach.",
+      "recommendation": "Separate dosing times or use paracetamol for pain."
+    },
+    "Methotrexate": {
+      "severity": "HIGH",
+      "reason": "Salicylates reduce methotrexate clearance, raising toxicity risk.",
+      "recommendation": "Avoid; discuss analgesia with the prescriber."
+    }
+  },
+  "Methotrexate": {
+    "Ibuprofen": {
+      "severity": "HIGH",
+      "reason": "NSAIDs reduce methotrexate excretion, which can cause bone-marrow and kidney toxicity.",
+      "recommendation": "Avoid NSAIDs unless specifically sanctioned and monitored."
+    },
+    "Cotrimoxazole": {
+      "severity": "HIGH",
+      "reason": "Both are antifolates; combined use can cause severe bone-marrow suppression.",
+      "recommendation": "This combination should be avoided."
+    }
+  },
+  "Tramadol": {
+    "Sertraline": {
+      "severity": "HIGH",
+      "reason": "Both raise serotonin levels; together they can trigger serotonin syndrome.",
+      "recommendation": "Review with the prescriber; watch for agitation, tremor and fever."
+    },
+    "Fluoxetine": {
+      "severity": "HIGH",
+      "reason": "Risk of serotonin syndrome, and fluoxetine may reduce tramadol's pain relief.",
+      "recommendation": "Consider an alternative analgesic."
+    }
+  },
+  "Digoxin": {
+    "Furosemide": {
+      "severity": "MEDIUM",
+      "reason": "Furosemide lowers potassium, which increases the risk of digoxin toxicity.",
+      "recommendation": "Monitor potassium levels."
+    },
+    "Amiodarone": {
+      "severity": "HIGH",
+      "reason": "Amiodarone can roughly double digoxin levels.",
+      "recommendation": "Digoxin dose reduction and level monitoring required."
+    }
+  },
+  "Ciprofloxacin": {
+    "Theophylline": {
+      "severity": "HIGH",
+      "reason": "Ciprofloxacin raises theophylline levels, risking seizures and arrhythmia.",
+      "recommendation": "Avoid; select a different antibiotic."
+    },
+    "Calcium Carbonate": {
+      "severity": "MEDIUM",
+      "reason": "Calcium binds the antibiotic in the gut and reduces its absorption.",
+      "recommendation": "Separate doses by at least two hours."
+    }
+  },
+  "Levothyroxine": {
+    "Calcium Carbonate": {
+      "severity": "MEDIUM",
+      "reason": "Calcium reduces absorption of thyroid hormone.",
+      "recommendation": "Take levothyroxine on an empty stomach, four hours apart from calcium."
+    },
+    "Ferrous Sulphate": {
+      "severity": "MEDIUM",
+      "reason": "Iron binds levothyroxine and reduces its absorption.",
+      "recommendation": "Separate the doses by at least four hours."
+    }
+  },
+  "Prednisolone": {
+    "Ibuprofen": {
+      "severity": "MEDIUM",
+      "reason": "Steroid plus NSAID substantially increases the risk of stomach ulcers and bleeding.",
+      "recommendation": "Consider gastric protection or an alternative analgesic."
+    }
+  },
+  "Glimepiride": {
+    "Fluconazole": {
+      "severity": "MEDIUM",
+      "reason": "Fluconazole raises glimepiride levels, which can cause low blood sugar.",
+      "recommendation": "Advise blood-sugar monitoring during the antifungal course."
+    },
+    "Propranolol": {
+      "severity": "MEDIUM",
+      "reason": "Beta blockers can mask the warning signs of hypoglycaemia.",
+      "recommendation": "Counsel the patient on non-adrenergic hypoglycaemia symptoms."
+    }
+  },
+  "Spironolactone": {
+    "Potassium Chloride": {
+      "severity": "HIGH",
+      "reason": "Both raise serum potassium; combined use risks dangerous hyperkalaemia.",
+      "recommendation": "Avoid unless potassium is being actively monitored."
+    }
+  },
+  "Paracetamol": {
+    "Alcohol": {
+      "severity": "MEDIUM",
+      "reason": "Regular alcohol use increases the risk of paracetamol-related liver injury.",
+      "recommendation": "Keep to the lowest effective dose and avoid alcohol."
+    }
+  }
+}

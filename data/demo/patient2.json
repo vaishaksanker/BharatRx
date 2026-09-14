@@ -1,0 +1,13 @@
+{
+  "_scenario": "DEMO 2 - Allergy catch. Patient says 'Penicillin', doctor writes an Indian brand.",
+  "patient": {
+    "name": "Priya Nair",
+    "age": 34,
+    "gender": "Female",
+    "pregnant": false,
+    "diseases": ["Asthma"],
+    "allergies": ["Penicillin"],
+    "current_medicines": ["Cetzine"]
+  },
+  "prescription": ["Augmentin 625", "Brufen 400"]
+}

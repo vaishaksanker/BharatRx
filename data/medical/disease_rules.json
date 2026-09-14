@@ -1,0 +1,176 @@
+{
+  "_comment": "Drug-Disease rules. Key = GENERIC medicine name, inner key = disease name as it appears in the patient profile.",
+  "Ibuprofen": {
+    "Kidney Disease": {
+      "severity": "HIGH",
+      "reason": "NSAIDs reduce blood flow to the kidneys and can worsen existing chronic kidney disease.",
+      "recommendation": "Avoid NSAIDs. Paracetamol is usually the preferred analgesic in kidney disease."
+    },
+    "Peptic Ulcer": {
+      "severity": "HIGH",
+      "reason": "NSAIDs damage the stomach lining and can cause ulcer bleeding or perforation.",
+      "recommendation": "Avoid; if unavoidable, gastric protection is required."
+    },
+    "Heart Failure": {
+      "severity": "HIGH",
+      "reason": "NSAIDs cause fluid and salt retention, which can decompensate heart failure.",
+      "recommendation": "Avoid NSAIDs in heart failure."
+    },
+    "Asthma": {
+      "severity": "MEDIUM",
+      "reason": "A subset of asthma patients experience bronchospasm after NSAIDs.",
+      "recommendation": "Check for any past reaction to painkillers before use."
+    },
+    "Hypertension": {
+      "severity": "MEDIUM",
+      "reason": "NSAIDs raise blood pressure and reduce the effect of antihypertensive medicines.",
+      "recommendation": "Limit to short courses with blood-pressure monitoring."
+    }
+  },
+  "Diclofenac": {
+    "Kidney Disease": {
+      "severity": "HIGH",
+      "reason": "NSAID-related reduction in renal blood flow can worsen kidney function.",
+      "recommendation": "Avoid; use paracetamol instead."
+    },
+    "Peptic Ulcer": {
+      "severity": "HIGH",
+      "reason": "High risk of gastrointestinal bleeding.",
+      "recommendation": "Avoid."
+    },
+    "Heart Disease": {
+      "severity": "HIGH",
+      "reason": "Diclofenac carries a higher cardiovascular risk than other NSAIDs.",
+      "recommendation": "Avoid in established cardiovascular disease."
+    }
+  },
+  "Naproxen": {
+    "Kidney Disease": {
+      "severity": "HIGH",
+      "reason": "NSAIDs can worsen renal function in chronic kidney disease.",
+      "recommendation": "Avoid; prefer paracetamol."
+    },
+    "Peptic Ulcer": {
+      "severity": "HIGH",
+      "reason": "Increased risk of ulcer bleeding.",
+      "recommendation": "Avoid."
+    }
+  },
+  "Aspirin": {
+    "Dengue": {
+      "severity": "HIGH",
+      "reason": "Dengue lowers platelet counts; aspirin further impairs clotting and increases haemorrhage risk.",
+      "recommendation": "Paracetamol is the recommended antipyretic in suspected dengue."
+    },
+    "Peptic Ulcer": {
+      "severity": "HIGH",
+      "reason": "Aspirin damages the gastric mucosa and can precipitate ulcer bleeding.",
+      "recommendation": "Avoid or add gastric protection under clinician advice."
+    },
+    "Asthma": {
+      "severity": "MEDIUM",
+      "reason": "Aspirin-exacerbated respiratory disease can trigger severe bronchospasm.",
+      "recommendation": "Check for any history of reaction to aspirin."
+    }
+  },
+  "Metformin": {
+    "Kidney Disease": {
+      "severity": "HIGH",
+      "reason": "Reduced kidney clearance allows metformin to accumulate, raising the risk of lactic acidosis.",
+      "recommendation": "Dose must be adjusted or stopped based on eGFR; clinician review required."
+    },
+    "Liver Disease": {
+      "severity": "MEDIUM",
+      "reason": "Impaired liver function increases lactic acidosis risk.",
+      "recommendation": "Use with caution and clinician oversight."
+    }
+  },
+  "Prednisolone": {
+    "Diabetes": {
+      "severity": "MEDIUM",
+      "reason": "Steroids raise blood glucose and can destabilise diabetes control.",
+      "recommendation": "Increase blood-sugar monitoring during the steroid course."
+    },
+    "Hypertension": {
+      "severity": "MEDIUM",
+      "reason": "Steroids cause salt and water retention, raising blood pressure.",
+      "recommendation": "Monitor blood pressure during treatment."
+    },
+    "Peptic Ulcer": {
+      "severity": "MEDIUM",
+      "reason": "Steroids increase ulcer risk, especially alongside NSAIDs.",
+      "recommendation": "Consider gastric protection."
+    }
+  },
+  "Pseudoephedrine": {
+    "Hypertension": {
+      "severity": "MEDIUM",
+      "reason": "Decongestants constrict blood vessels and raise blood pressure.",
+      "recommendation": "Prefer a non-decongestant option for nasal symptoms."
+    },
+    "Heart Disease": {
+      "severity": "MEDIUM",
+      "reason": "Can increase heart rate and blood pressure.",
+      "recommendation": "Avoid in significant cardiac disease."
+    }
+  },
+  "Paracetamol": {
+    "Liver Disease": {
+      "severity": "MEDIUM",
+      "reason": "Paracetamol is processed by the liver; impaired function reduces the safe daily dose.",
+      "recommendation": "Reduced maximum daily dose; confirm with the prescriber."
+    }
+  },
+  "Propranolol": {
+    "Asthma": {
+      "severity": "HIGH",
+      "reason": "Non-selective beta blockers can cause severe bronchospasm in asthma.",
+      "recommendation": "Contraindicated; a cardioselective alternative should be considered."
+    },
+    "COPD": {
+      "severity": "HIGH",
+      "reason": "Risk of bronchoconstriction and breathlessness.",
+      "recommendation": "Avoid non-selective beta blockers."
+    },
+    "Diabetes": {
+      "severity": "MEDIUM",
+      "reason": "Can mask the adrenergic warning signs of low blood sugar.",
+      "recommendation": "Counsel the patient on recognising hypoglycaemia."
+    }
+  },
+  "Atenolol": {
+    "Asthma": {
+      "severity": "MEDIUM",
+      "reason": "Even cardioselective beta blockers can worsen asthma at higher doses.",
+      "recommendation": "Use the lowest effective dose with monitoring."
+    }
+  },
+  "Glimepiride": {
+    "Kidney Disease": {
+      "severity": "MEDIUM",
+      "reason": "Reduced clearance prolongs the drug's action and increases hypoglycaemia risk.",
+      "recommendation": "Dose reduction and glucose monitoring advised."
+    }
+  },
+  "Tramadol": {
+    "Epilepsy": {
+      "severity": "HIGH",
+      "reason": "Tramadol lowers the seizure threshold.",
+      "recommendation": "Avoid in patients with a seizure disorder."
+    }
+  },
+  "Ciprofloxacin": {
+    "Epilepsy": {
+      "severity": "MEDIUM",
+      "reason": "Fluoroquinolones can lower the seizure threshold.",
+      "recommendation": "Consider an alternative antibiotic class."
+    }
+  },
+  "Fluconazole": {
+    "Liver Disease": {
+      "severity": "MEDIUM",
+      "reason": "Azole antifungals are hepatically metabolised and can cause liver injury.",
+      "recommendation": "Monitor liver function during treatment."
+    }
+  }
+}

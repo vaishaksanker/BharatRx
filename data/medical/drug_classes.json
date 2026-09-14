@@ -1,0 +1,337 @@
+{
+  "_comment": "Drug class membership. One generic may belong to several classes (e.g. Aspirin is both NSAID and Antiplatelet). Used with class_interactions.json to cover thousands of drug pairs without listing each one.",
+  "NSAID": [
+    "Ibuprofen",
+    "Diclofenac",
+    "Naproxen",
+    "Aceclofenac",
+    "Mefenamic Acid",
+    "Indomethacin",
+    "Ketorolac",
+    "Piroxicam",
+    "Etoricoxib",
+    "Nimesulide",
+    "Aspirin",
+    "Ketoprofen",
+    "Flurbiprofen"
+  ],
+  "Anticoagulant": [
+    "Warfarin",
+    "Acenocoumarol",
+    "Dabigatran",
+    "Rivaroxaban",
+    "Apixaban",
+    "Edoxaban",
+    "Heparin",
+    "Enoxaparin"
+  ],
+  "Antiplatelet": [
+    "Aspirin",
+    "Clopidogrel",
+    "Prasugrel",
+    "Ticagrelor",
+    "Dipyridamole",
+    "Cilostazol"
+  ],
+  "ACE Inhibitor": [
+    "Enalapril",
+    "Ramipril",
+    "Lisinopril",
+    "Perindopril",
+    "Captopril"
+  ],
+  "ARB": [
+    "Losartan",
+    "Telmisartan",
+    "Olmesartan",
+    "Valsartan",
+    "Candesartan",
+    "Irbesartan"
+  ],
+  "Potassium Sparing Diuretic": [
+    "Spironolactone",
+    "Eplerenone",
+    "Amiloride",
+    "Triamterene"
+  ],
+  "Loop Diuretic": [
+    "Furosemide",
+    "Torsemide",
+    "Bumetanide"
+  ],
+  "Thiazide Diuretic": [
+    "Hydrochlorothiazide",
+    "Chlorthalidone",
+    "Indapamide"
+  ],
+  "Potassium Supplement": [
+    "Potassium Chloride",
+    "Potassium Citrate"
+  ],
+  "Statin": [
+    "Simvastatin",
+    "Atorvastatin",
+    "Rosuvastatin",
+    "Pravastatin",
+    "Lovastatin",
+    "Fluvastatin",
+    "Pitavastatin"
+  ],
+  "Fibrate": [
+    "Gemfibrozil",
+    "Fenofibrate",
+    "Bezafibrate"
+  ],
+  "Macrolide": [
+    "Clarithromycin",
+    "Erythromycin",
+    "Azithromycin",
+    "Roxithromycin"
+  ],
+  "Azole Antifungal": [
+    "Fluconazole",
+    "Itraconazole",
+    "Ketoconazole",
+    "Voriconazole",
+    "Posaconazole"
+  ],
+  "Fluoroquinolone": [
+    "Ciprofloxacin",
+    "Levofloxacin",
+    "Ofloxacin",
+    "Norfloxacin",
+    "Moxifloxacin"
+  ],
+  "Tetracycline": [
+    "Doxycycline",
+    "Tetracycline",
+    "Minocycline"
+  ],
+  "Nitrate": [
+    "Nitroglycerin",
+    "Isosorbide Dinitrate",
+    "Isosorbide Mononitrate"
+  ],
+  "PDE5 Inhibitor": [
+    "Sildenafil",
+    "Tadalafil",
+    "Vardenafil",
+    "Avanafil"
+  ],
+  "SSRI": [
+    "Sertraline",
+    "Fluoxetine",
+    "Escitalopram",
+    "Citalopram",
+    "Paroxetine",
+    "Fluvoxamine"
+  ],
+  "SNRI": [
+    "Venlafaxine",
+    "Duloxetine",
+    "Desvenlafaxine"
+  ],
+  "Triptan": [
+    "Sumatriptan",
+    "Rizatriptan",
+    "Naratriptan",
+    "Zolmitriptan"
+  ],
+  "Opioid": [
+    "Tramadol",
+    "Morphine",
+    "Codeine",
+    "Fentanyl",
+    "Oxycodone",
+    "Buprenorphine",
+    "Pethidine"
+  ],
+  "Benzodiazepine": [
+    "Alprazolam",
+    "Diazepam",
+    "Lorazepam",
+    "Clonazepam",
+    "Chlordiazepoxide",
+    "Nitrazepam"
+  ],
+  "Z Drug": [
+    "Zolpidem",
+    "Zopiclone",
+    "Eszopiclone"
+  ],
+  "Sulfonylurea": [
+    "Glimepiride",
+    "Glibenclamide",
+    "Gliclazide",
+    "Glipizide"
+  ],
+  "Biguanide": [
+    "Metformin"
+  ],
+  "Non Selective Beta Blocker": [
+    "Propranolol",
+    "Carvedilol",
+    "Sotalol",
+    "Labetalol",
+    "Nadolol"
+  ],
+  "Beta Blocker": [
+    "Propranolol",
+    "Atenolol",
+    "Metoprolol",
+    "Bisoprolol",
+    "Carvedilol",
+    "Nebivolol",
+    "Sotalol",
+    "Labetalol"
+  ],
+  "Corticosteroid": [
+    "Prednisolone",
+    "Prednisone",
+    "Dexamethasone",
+    "Methylprednisolone",
+    "Hydrocortisone",
+    "Deflazacort",
+    "Betamethasone"
+  ],
+  "PPI": [
+    "Omeprazole",
+    "Pantoprazole",
+    "Esomeprazole",
+    "Rabeprazole",
+    "Lansoprazole"
+  ],
+  "Enzyme Inducer": [
+    "Rifampicin",
+    "Phenytoin",
+    "Carbamazepine",
+    "Phenobarbitone",
+    "Primidone"
+  ],
+  "Antiarrhythmic": [
+    "Amiodarone",
+    "Dronedarone",
+    "Flecainide",
+    "Propafenone"
+  ],
+  "Calcium Channel Blocker Non DHP": [
+    "Verapamil",
+    "Diltiazem"
+  ],
+  "Mineral Supplement": [
+    "Calcium Carbonate",
+    "Ferrous Sulphate",
+    "Ferrous Fumarate",
+    "Magnesium Hydroxide",
+    "Aluminium Hydroxide",
+    "Zinc Sulphate"
+  ],
+  "Thyroid Hormone": [
+    "Levothyroxine",
+    "Liothyronine"
+  ],
+  "QT Prolonging": [
+    "Amiodarone",
+    "Sotalol",
+    "Clarithromycin",
+    "Erythromycin",
+    "Moxifloxacin",
+    "Levofloxacin",
+    "Ciprofloxacin",
+    "Ondansetron",
+    "Domperidone",
+    "Haloperidol",
+    "Citalopram",
+    "Escitalopram",
+    "Hydroxychloroquine"
+  ],
+  "Antitubercular": [
+    "Rifampicin",
+    "Isoniazid",
+    "Pyrazinamide",
+    "Ethambutol"
+  ],
+  "Immunosuppressant": [
+    "Methotrexate",
+    "Azathioprine",
+    "Ciclosporin",
+    "Tacrolimus",
+    "Mycophenolate"
+  ],
+  "Antifolate": [
+    "Cotrimoxazole",
+    "Trimethoprim",
+    "Pyrimethamine"
+  ],
+  "Xanthine": [
+    "Theophylline",
+    "Aminophylline",
+    "Doxofylline"
+  ],
+  "Antihistamine": [
+    "Cetirizine",
+    "Levocetirizine",
+    "Fexofenadine",
+    "Loratadine",
+    "Chlorpheniramine",
+    "Hydroxyzine",
+    "Montelukast"
+  ],
+  "Analgesic Antipyretic": [
+    "Paracetamol",
+    "Acetaminophen"
+  ],
+  "Antiemetic": [
+    "Ondansetron",
+    "Domperidone",
+    "Metoclopramide"
+  ],
+  "Antacid": [
+    "Sucralfate",
+    "Ranitidine",
+    "Famotidine"
+  ],
+  "Vitamin Supplement": [
+    "Vitamin D3",
+    "Cholecalciferol",
+    "Vitamin B12",
+    "Methylcobalamin",
+    "Folic Acid",
+    "Vitamin C",
+    "Ascorbic Acid"
+  ],
+  "Gliptin": [
+    "Sitagliptin",
+    "Vildagliptin",
+    "Teneligliptin",
+    "Linagliptin",
+    "Saxagliptin"
+  ],
+  "SGLT2 Inhibitor": [
+    "Dapagliflozin",
+    "Empagliflozin",
+    "Canagliflozin"
+  ],
+  "Insulin": [
+    "Insulin Glargine",
+    "Insulin Aspart",
+    "Insulin Lispro",
+    "Human Insulin"
+  ],
+  "Bronchodilator": [
+    "Salbutamol",
+    "Formoterol",
+    "Salmeterol",
+    "Ipratropium",
+    "Tiotropium"
+  ],
+  "Inhaled Corticosteroid": [
+    "Budesonide",
+    "Fluticasone",
+    "Beclomethasone"
+  ],
+  "Antimetabolite": [
+    "Methotrexate",
+    "Pemetrexed"
+  ]
+}

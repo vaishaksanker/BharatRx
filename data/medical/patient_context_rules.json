@@ -1,0 +1,30 @@
+{
+  "_comment": "Rules that depend on the patient rather than on another drug or disease.",
+  "age_above": {
+    "Alprazolam": {"age": 65, "severity": "MEDIUM", "reason": "Benzodiazepines cause sedation and confusion in older adults, raising the risk of falls and fractures.", "recommendation": "Consider a non-benzodiazepine option or the lowest possible dose."},
+    "Diazepam": {"age": 65, "severity": "MEDIUM", "reason": "Long-acting benzodiazepine accumulates in older adults and increases fall risk.", "recommendation": "Avoid where possible in the elderly."},
+    "Zolpidem": {"age": 65, "severity": "MEDIUM", "reason": "Sleep medicines increase night-time falls and confusion in older adults.", "recommendation": "Use the lowest dose for the shortest duration."},
+    "Amitriptyline": {"age": 65, "severity": "MEDIUM", "reason": "Anticholinergic effects cause confusion, urinary retention and falls in older adults.", "recommendation": "Consider an alternative agent."},
+    "Ibuprofen": {"age": 65, "severity": "MEDIUM", "reason": "Older adults have a higher risk of NSAID-related gastrointestinal bleeding and kidney injury.", "recommendation": "Short courses only; consider paracetamol first."},
+    "Diclofenac": {"age": 65, "severity": "MEDIUM", "reason": "Raised gastrointestinal and cardiovascular risk in older adults.", "recommendation": "Prefer paracetamol where adequate."}
+  },
+  "age_below": {
+    "Aspirin": {"age": 16, "severity": "HIGH", "reason": "Aspirin in children and teenagers with a viral illness is associated with Reye's syndrome, a rare but serious liver and brain injury.", "recommendation": "Paracetamol is the standard antipyretic for this age group."},
+    "Ciprofloxacin": {"age": 18, "severity": "MEDIUM", "reason": "Fluoroquinolones may affect developing cartilage and are usually reserved for specific indications in children.", "recommendation": "Confirm the indication with the prescriber."},
+    "Doxycycline": {"age": 8, "severity": "MEDIUM", "reason": "Tetracyclines can cause permanent staining of developing teeth.", "recommendation": "Use an alternative antibiotic unless specifically indicated."},
+    "Ibuprofen": {"age": 12, "severity": "MEDIUM", "reason": "Adult-strength tablets are not suitable for young children; weight-based paediatric dosing is required.", "recommendation": "Confirm a paediatric syrup formulation and weight-based dose."}
+  },
+  "pregnancy": {
+    "Isotretinoin": {"severity": "HIGH", "reason": "Isotretinoin causes severe birth defects and is contraindicated in pregnancy.", "recommendation": "Do not dispense. Immediate clinician review required."},
+    "Warfarin": {"severity": "HIGH", "reason": "Warfarin crosses the placenta and can cause foetal malformations and bleeding.", "recommendation": "Urgent clinician review; alternative anticoagulation is normally used."},
+    "Losartan": {"severity": "HIGH", "reason": "ARBs cause foetal kidney damage and are contraindicated in pregnancy.", "recommendation": "Immediate review for an alternative antihypertensive."},
+    "Enalapril": {"severity": "HIGH", "reason": "ACE inhibitors are associated with foetal injury, particularly in later pregnancy.", "recommendation": "Immediate review for an alternative antihypertensive."},
+    "Atorvastatin": {"severity": "HIGH", "reason": "Statins are not recommended in pregnancy.", "recommendation": "Discuss stopping with the prescriber."},
+    "Methotrexate": {"severity": "HIGH", "reason": "Methotrexate is a known teratogen and abortifacient.", "recommendation": "Contraindicated in pregnancy."},
+    "Doxycycline": {"severity": "HIGH", "reason": "Tetracyclines affect foetal bone and tooth development.", "recommendation": "Use a pregnancy-safe antibiotic."},
+    "Ibuprofen": {"severity": "HIGH", "reason": "NSAIDs in the third trimester can close the foetal ductus arteriosus and reduce amniotic fluid.", "recommendation": "Paracetamol is generally preferred in pregnancy."},
+    "Diclofenac": {"severity": "HIGH", "reason": "Same NSAID-related foetal risk.", "recommendation": "Avoid in pregnancy."},
+    "Fluconazole": {"severity": "MEDIUM", "reason": "High-dose fluconazole in the first trimester has been associated with birth defects.", "recommendation": "Discuss a topical alternative with the prescriber."},
+    "Ciprofloxacin": {"severity": "MEDIUM", "reason": "Generally avoided in pregnancy unless no alternative exists.", "recommendation": "Confirm the indication with the prescriber."}
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "_scenario": "DEMO 3 - The showcase. Elderly multi-morbid patient, five alerts from one prescription.",
+  "patient": {
+    "name": "Lakshmi Menon",
+    "age": 71,
+    "gender": "Female",
+    "pregnant": false,
+    "diseases": ["Diabetes", "Hypertension", "Kidney Disease"],
+    "allergies": ["Sulfa"],
+    "current_medicines": ["Glycomet 500", "Losartan", "Ecosprin 75"]
+  },
+  "prescription": ["Voveran", "Septran DS", "Wysolone 10"]
+}

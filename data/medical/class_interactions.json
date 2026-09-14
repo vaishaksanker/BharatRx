@@ -1,0 +1,369 @@
+{
+  "_comment": "Class-level interaction rules. Each rule expands to (members of class_a) x (members of class_b) pairs. Checked ONLY when no explicit pair exists in drug_interactions.json, so curated entries always win.",
+  "rules": [
+    {
+      "class_a": "NSAID",
+      "class_b": "Anticoagulant",
+      "severity": "HIGH",
+      "reason": "NSAIDs impair platelet function and irritate the gastric lining. Combined with an anticoagulant, the risk of gastrointestinal and other bleeding rises substantially.",
+      "recommendation": "Avoid the combination. Paracetamol is the usual alternative for pain or fever."
+    },
+    {
+      "class_a": "NSAID",
+      "class_b": "Antiplatelet",
+      "severity": "HIGH",
+      "reason": "Two agents both affecting platelet function and gastric mucosa markedly increase bleeding and ulcer risk.",
+      "recommendation": "Review with the prescriber; consider gastric protection or paracetamol instead."
+    },
+    {
+      "class_a": "NSAID",
+      "class_b": "ACE Inhibitor",
+      "severity": "HIGH",
+      "reason": "NSAIDs reduce the blood-pressure-lowering effect and, together with an ACE inhibitor, cut blood flow to the kidneys.",
+      "recommendation": "Avoid regular NSAID use; monitor blood pressure and kidney function if unavoidable."
+    },
+    {
+      "class_a": "NSAID",
+      "class_b": "ARB",
+      "severity": "HIGH",
+      "reason": "NSAIDs blunt the antihypertensive effect and add renal strain when combined with an ARB.",
+      "recommendation": "Prefer paracetamol. Short NSAID courses only, with monitoring."
+    },
+    {
+      "class_a": "NSAID",
+      "class_b": "Loop Diuretic",
+      "severity": "MEDIUM",
+      "reason": "NSAIDs reduce diuretic effectiveness and add kidney strain. With an ACE inhibitor or ARB as well this becomes the high-risk 'triple whammy'.",
+      "recommendation": "Check whether the patient is also on an ACE inhibitor or ARB, and monitor renal function."
+    },
+    {
+      "class_a": "NSAID",
+      "class_b": "Thiazide Diuretic",
+      "severity": "MEDIUM",
+      "reason": "NSAIDs reduce the antihypertensive effect of thiazides and may impair renal function.",
+      "recommendation": "Monitor blood pressure; consider paracetamol."
+    },
+    {
+      "class_a": "NSAID",
+      "class_b": "Corticosteroid",
+      "severity": "MEDIUM",
+      "reason": "Combining an NSAID with a steroid substantially raises the risk of peptic ulceration and gastrointestinal bleeding.",
+      "recommendation": "Consider gastric protection or an alternative analgesic."
+    },
+    {
+      "class_a": "NSAID",
+      "class_b": "SSRI",
+      "severity": "MEDIUM",
+      "reason": "SSRIs reduce platelet serotonin and, with an NSAID, increase upper gastrointestinal bleeding risk.",
+      "recommendation": "Consider a proton pump inhibitor or paracetamol instead."
+    },
+    {
+      "class_a": "NSAID",
+      "class_b": "Antimetabolite",
+      "severity": "HIGH",
+      "reason": "NSAIDs reduce renal clearance of methotrexate and related agents, raising the risk of bone-marrow and kidney toxicity.",
+      "recommendation": "Avoid unless specifically sanctioned and monitored by the prescriber."
+    },
+    {
+      "class_a": "Anticoagulant",
+      "class_b": "Antiplatelet",
+      "severity": "HIGH",
+      "reason": "Two different blood-thinning mechanisms combined substantially increase bleeding risk.",
+      "recommendation": "Confirm the combination is deliberate, time-limited and monitored."
+    },
+    {
+      "class_a": "Anticoagulant",
+      "class_b": "Azole Antifungal",
+      "severity": "HIGH",
+      "reason": "Azole antifungals inhibit anticoagulant metabolism, raising drug levels and INR.",
+      "recommendation": "Avoid if possible; otherwise close INR monitoring is required."
+    },
+    {
+      "class_a": "Anticoagulant",
+      "class_b": "Fluoroquinolone",
+      "severity": "HIGH",
+      "reason": "Fluoroquinolones can potentiate anticoagulant effect and raise INR.",
+      "recommendation": "Request INR monitoring or select an alternative antibiotic."
+    },
+    {
+      "class_a": "Anticoagulant",
+      "class_b": "Macrolide",
+      "severity": "MEDIUM",
+      "reason": "Macrolides can increase anticoagulant effect through enzyme inhibition.",
+      "recommendation": "Consider an INR check during and shortly after the antibiotic course."
+    },
+    {
+      "class_a": "Anticoagulant",
+      "class_b": "SSRI",
+      "severity": "MEDIUM",
+      "reason": "SSRIs impair platelet aggregation, adding to anticoagulant bleeding risk.",
+      "recommendation": "Counsel the patient on bleeding signs; review with the prescriber."
+    },
+    {
+      "class_a": "Anticoagulant",
+      "class_b": "Enzyme Inducer",
+      "severity": "HIGH",
+      "reason": "Enzyme inducers accelerate anticoagulant breakdown, reducing its effect and risking clot formation.",
+      "recommendation": "Dose adjustment with close INR monitoring is required."
+    },
+    {
+      "class_a": "ACE Inhibitor",
+      "class_b": "Potassium Sparing Diuretic",
+      "severity": "HIGH",
+      "reason": "Both retain potassium. Combined use can cause dangerous hyperkalaemia and cardiac arrhythmia.",
+      "recommendation": "Serum potassium and renal function monitoring required."
+    },
+    {
+      "class_a": "ARB",
+      "class_b": "Potassium Sparing Diuretic",
+      "severity": "HIGH",
+      "reason": "Both raise serum potassium; together they risk hyperkalaemia.",
+      "recommendation": "Monitor potassium and renal function."
+    },
+    {
+      "class_a": "ACE Inhibitor",
+      "class_b": "Potassium Supplement",
+      "severity": "HIGH",
+      "reason": "An ACE inhibitor already retains potassium; adding a supplement can cause hyperkalaemia.",
+      "recommendation": "Confirm with the prescriber and check serum potassium."
+    },
+    {
+      "class_a": "ARB",
+      "class_b": "Potassium Supplement",
+      "severity": "HIGH",
+      "reason": "An ARB already retains potassium; a supplement compounds the risk.",
+      "recommendation": "Confirm with the prescriber and check serum potassium."
+    },
+    {
+      "class_a": "ACE Inhibitor",
+      "class_b": "ARB",
+      "severity": "HIGH",
+      "reason": "Dual blockade of the renin-angiotensin system increases the risk of hyperkalaemia, hypotension and acute kidney injury without added benefit for most patients.",
+      "recommendation": "This combination is generally not recommended; confirm with the prescriber."
+    },
+    {
+      "class_a": "Statin",
+      "class_b": "Macrolide",
+      "severity": "HIGH",
+      "reason": "Macrolides inhibit statin metabolism, raising statin levels and the risk of muscle injury including rhabdomyolysis.",
+      "recommendation": "Pause the statin during the antibiotic course or select a different antibiotic."
+    },
+    {
+      "class_a": "Statin",
+      "class_b": "Azole Antifungal",
+      "severity": "HIGH",
+      "reason": "Azole antifungals sharply raise statin exposure, increasing myopathy risk.",
+      "recommendation": "Avoid the combination or temporarily withhold the statin."
+    },
+    {
+      "class_a": "Statin",
+      "class_b": "Fibrate",
+      "severity": "HIGH",
+      "reason": "Both affect muscle tissue; combined use raises the risk of rhabdomyolysis.",
+      "recommendation": "Avoid; a safer lipid-lowering combination should be considered."
+    },
+    {
+      "class_a": "Statin",
+      "class_b": "Calcium Channel Blocker Non DHP",
+      "severity": "MEDIUM",
+      "reason": "Verapamil and diltiazem raise statin levels through enzyme inhibition.",
+      "recommendation": "Dose limits apply for some statins; confirm the prescribed dose."
+    },
+    {
+      "class_a": "Nitrate",
+      "class_b": "PDE5 Inhibitor",
+      "severity": "HIGH",
+      "reason": "Both dilate blood vessels. Together they can cause a sudden, severe and potentially fatal drop in blood pressure.",
+      "recommendation": "This combination is contraindicated. Do not dispense without clinician review."
+    },
+    {
+      "class_a": "SSRI",
+      "class_b": "Opioid",
+      "severity": "HIGH",
+      "reason": "Tramadol and related opioids raise serotonin levels; combined with an SSRI this can trigger serotonin syndrome.",
+      "recommendation": "Review with the prescriber. Watch for agitation, tremor, sweating and fever."
+    },
+    {
+      "class_a": "SSRI",
+      "class_b": "SNRI",
+      "severity": "HIGH",
+      "reason": "Two serotonergic antidepressants together carry a high risk of serotonin syndrome.",
+      "recommendation": "Confirm this is a deliberate, supervised cross-taper."
+    },
+    {
+      "class_a": "SSRI",
+      "class_b": "Triptan",
+      "severity": "MEDIUM",
+      "reason": "Both increase serotonergic activity, with a risk of serotonin syndrome.",
+      "recommendation": "Counsel the patient on warning symptoms; review if both are long-term."
+    },
+    {
+      "class_a": "SNRI",
+      "class_b": "Opioid",
+      "severity": "HIGH",
+      "reason": "Combined serotonergic effect raises the risk of serotonin syndrome.",
+      "recommendation": "Review with the prescriber before dispensing."
+    },
+    {
+      "class_a": "Benzodiazepine",
+      "class_b": "Opioid",
+      "severity": "HIGH",
+      "reason": "Both depress the central nervous system. Together they significantly increase the risk of profound sedation and respiratory depression.",
+      "recommendation": "Avoid where possible. If unavoidable, use the lowest doses and counsel on sedation risk."
+    },
+    {
+      "class_a": "Z Drug",
+      "class_b": "Opioid",
+      "severity": "HIGH",
+      "reason": "Additive central nervous system depression with risk of respiratory compromise.",
+      "recommendation": "Avoid the combination; review with the prescriber."
+    },
+    {
+      "class_a": "Benzodiazepine",
+      "class_b": "Z Drug",
+      "severity": "MEDIUM",
+      "reason": "Two sedative-hypnotics together cause excessive sedation, confusion and fall risk.",
+      "recommendation": "Duplicate sedative therapy; confirm only one is intended."
+    },
+    {
+      "class_a": "Sulfonylurea",
+      "class_b": "Azole Antifungal",
+      "severity": "MEDIUM",
+      "reason": "Azole antifungals raise sulfonylurea levels, increasing the risk of hypoglycaemia.",
+      "recommendation": "Advise blood-glucose monitoring during the antifungal course."
+    },
+    {
+      "class_a": "Sulfonylurea",
+      "class_b": "Beta Blocker",
+      "severity": "MEDIUM",
+      "reason": "Beta blockers can mask the adrenergic warning signs of low blood sugar such as tremor and palpitations.",
+      "recommendation": "Counsel the patient on recognising hypoglycaemia without these cues."
+    },
+    {
+      "class_a": "Sulfonylurea",
+      "class_b": "Antifolate",
+      "severity": "MEDIUM",
+      "reason": "Cotrimoxazole and related agents can potentiate sulfonylureas and cause hypoglycaemia.",
+      "recommendation": "Monitor blood glucose during treatment."
+    },
+    {
+      "class_a": "QT Prolonging",
+      "class_b": "QT Prolonging",
+      "severity": "HIGH",
+      "reason": "Two medicines that each prolong the cardiac QT interval, taken together, increase the risk of a dangerous arrhythmia called torsades de pointes.",
+      "recommendation": "Avoid the combination or arrange ECG and electrolyte monitoring."
+    },
+    {
+      "class_a": "Antiarrhythmic",
+      "class_b": "Beta Blocker",
+      "severity": "MEDIUM",
+      "reason": "Additive slowing of heart rate and cardiac conduction can cause bradycardia or heart block.",
+      "recommendation": "Monitor heart rate; confirm the combination is intended."
+    },
+    {
+      "class_a": "Calcium Channel Blocker Non DHP",
+      "class_b": "Beta Blocker",
+      "severity": "HIGH",
+      "reason": "Verapamil or diltiazem with a beta blocker can cause severe bradycardia, heart block and heart failure.",
+      "recommendation": "Generally avoided; requires specialist review."
+    },
+    {
+      "class_a": "Thyroid Hormone",
+      "class_b": "Mineral Supplement",
+      "severity": "MEDIUM",
+      "reason": "Calcium and iron bind thyroid hormone in the gut and substantially reduce its absorption.",
+      "recommendation": "Separate the doses by at least four hours."
+    },
+    {
+      "class_a": "Thyroid Hormone",
+      "class_b": "PPI",
+      "severity": "MEDIUM",
+      "reason": "Reduced gastric acid impairs levothyroxine absorption, which may reduce thyroid control.",
+      "recommendation": "Monitor thyroid function if both are long-term."
+    },
+    {
+      "class_a": "Fluoroquinolone",
+      "class_b": "Mineral Supplement",
+      "severity": "MEDIUM",
+      "reason": "Calcium, iron, magnesium and aluminium bind the antibiotic in the gut and markedly reduce its absorption, risking treatment failure.",
+      "recommendation": "Separate doses by at least two hours before or six hours after the antibiotic."
+    },
+    {
+      "class_a": "Tetracycline",
+      "class_b": "Mineral Supplement",
+      "severity": "MEDIUM",
+      "reason": "Mineral chelation greatly reduces tetracycline absorption.",
+      "recommendation": "Separate the doses by at least two hours."
+    },
+    {
+      "class_a": "Xanthine",
+      "class_b": "Fluoroquinolone",
+      "severity": "HIGH",
+      "reason": "Fluoroquinolones raise theophylline levels, which can cause seizures and cardiac arrhythmia.",
+      "recommendation": "Avoid; select an alternative antibiotic."
+    },
+    {
+      "class_a": "Xanthine",
+      "class_b": "Macrolide",
+      "severity": "MEDIUM",
+      "reason": "Macrolides can raise theophylline levels towards the toxic range.",
+      "recommendation": "Monitor for nausea, tremor and palpitations."
+    },
+    {
+      "class_a": "Antiplatelet",
+      "class_b": "PPI",
+      "severity": "MEDIUM",
+      "reason": "Some proton pump inhibitors, particularly omeprazole, reduce the activation of clopidogrel and may lessen its antiplatelet effect.",
+      "recommendation": "Pantoprazole is generally the preferred acid-suppressing agent."
+    },
+    {
+      "class_a": "Immunosuppressant",
+      "class_b": "Azole Antifungal",
+      "severity": "HIGH",
+      "reason": "Azole antifungals sharply raise levels of ciclosporin, tacrolimus and related agents, risking toxicity.",
+      "recommendation": "Requires specialist dose adjustment and level monitoring."
+    },
+    {
+      "class_a": "Immunosuppressant",
+      "class_b": "Enzyme Inducer",
+      "severity": "HIGH",
+      "reason": "Enzyme inducers lower immunosuppressant levels and risk transplant rejection or disease flare.",
+      "recommendation": "Specialist review with drug level monitoring."
+    },
+    {
+      "class_a": "Enzyme Inducer",
+      "class_b": "Statin",
+      "severity": "MEDIUM",
+      "reason": "Enzyme inducers reduce statin levels and may lessen cholesterol control.",
+      "recommendation": "Monitor lipid profile; dose adjustment may be needed."
+    },
+    {
+      "class_a": "Corticosteroid",
+      "class_b": "Loop Diuretic",
+      "severity": "MEDIUM",
+      "reason": "Both lower serum potassium; combined use can cause hypokalaemia.",
+      "recommendation": "Monitor potassium, particularly in patients also taking digoxin."
+    },
+    {
+      "class_a": "Biguanide",
+      "class_b": "Loop Diuretic",
+      "severity": "MEDIUM",
+      "reason": "Diuretic-induced dehydration reduces renal clearance of metformin, raising the risk of lactic acidosis.",
+      "recommendation": "Ensure adequate hydration; periodic renal function checks."
+    },
+    {
+      "class_a": "SGLT2 Inhibitor",
+      "class_b": "Loop Diuretic",
+      "severity": "MEDIUM",
+      "reason": "Both increase fluid loss. Combined use raises the risk of dehydration, low blood pressure and kidney injury, particularly in older patients.",
+      "recommendation": "Counsel on hydration; monitor blood pressure and renal function."
+    },
+    {
+      "class_a": "Antihistamine",
+      "class_b": "Benzodiazepine",
+      "severity": "MEDIUM",
+      "reason": "Sedating antihistamines add to benzodiazepine drowsiness, increasing falls and impaired alertness.",
+      "recommendation": "Advise against driving; consider a non-sedating antihistamine."
+    }
+  ]
+}

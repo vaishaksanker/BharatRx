@@ -1,0 +1,13 @@
+{
+  "_scenario": "DEMO 1 - Classic drug-drug interaction. The judges' favourite.",
+  "patient": {
+    "name": "Rajesh Kumar",
+    "age": 64,
+    "gender": "Male",
+    "pregnant": false,
+    "diseases": ["Hypertension", "Atrial Fibrillation"],
+    "allergies": [],
+    "current_medicines": ["Warfarin", "Losar 50"]
+  },
+  "prescription": ["Combiflam", "Dolo 650"]
+}

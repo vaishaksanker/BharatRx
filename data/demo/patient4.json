@@ -1,0 +1,13 @@
+{
+  "_scenario": "DEMO 4 - Clean prescription. Proves the engine does not cry wolf.",
+  "patient": {
+    "name": "Arun Das",
+    "age": 28,
+    "gender": "Male",
+    "pregnant": false,
+    "diseases": [],
+    "allergies": [],
+    "current_medicines": []
+  },
+  "prescription": ["Dolo 650", "Cetzine"]
+}

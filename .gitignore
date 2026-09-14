@@ -102,3 +102,4 @@ logs/
 .Trashes
 ehthumbs.db
 Thumbs.db
+data/patients/*.json 
