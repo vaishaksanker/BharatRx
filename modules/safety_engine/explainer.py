@@ -19,31 +19,111 @@ datasets. Your demo cannot break because of this file.
 
 import os
 import json
+import urllib.request
+import urllib.error
+import time
 
-# Read the shared key from backend/.env - the SAME key Namita uses.
+# Read the key from backend/.env - loaded by the server at startup.
 API_KEY = os.getenv("GEMINI_API_KEY")
 
-MODEL_NAME = "gemini-2.0-flash"
+# gemini-2.5-flash is the current free-tier workhorse. Change here if
+# Google renames it; nothing else in the file references the model.
+# Models are tried IN ORDER. If one returns 503 (high demand) we move to
+# the next rather than giving up. Flash-lite models are less popular and
+# therefore less likely to be overloaded, so they sit near the top.
+#
+# Check what your key can access with:
+#   GET https://generativelanguage.googleapis.com/v1beta/models
+MODEL_CHAIN = [
+    "gemini-3.5-flash-lite",
+    "gemini-3.5-flash",
+    "gemini-3.6-flash",
+    "gemini-3.1-flash-lite",
+]
 
-# We only build the client once, not on every request.
-_model = None
+# Kept for backwards compatibility - some code may still read this.
+MODEL_NAME = MODEL_CHAIN[0]
+
+API_URL = (
+    "https://generativelanguage.googleapis.com/v1beta/models/"
+    "{model}:generateContent"
+)
+
+# Per-attempt timeout. Total worst case is roughly
+# TIMEOUT_SECONDS x len(MODEL_CHAIN), so keep this modest.
+TIMEOUT_SECONDS = 20
+
+# How many times to retry the SAME model on a 503 before moving on.
+RETRIES_PER_MODEL = 2
 
 
-def _get_model():
-    """Create the Gemini client lazily, and only if a key exists."""
-    global _model
-    if _model is not None:
-        return _model
+def _post(model, prompt):
+    """One HTTP call to one model. Raises on any failure."""
+    body = json.dumps({
+        "contents": [{"parts": [{"text": prompt}]}],
+        "generationConfig": {"temperature": 0.3},
+    }).encode("utf-8")
+
+    request = urllib.request.Request(
+        API_URL.format(model=model),
+        data=body,
+        headers={
+            "Content-Type": "application/json",
+            "x-goog-api-key": API_KEY,
+        },
+        method="POST",
+    )
+
+    with urllib.request.urlopen(request, timeout=TIMEOUT_SECONDS) as response:
+        payload = json.loads(response.read().decode("utf-8"))
+
+    return payload["candidates"][0]["content"]["parts"][0]["text"]
+
+
+def _call_gemini(prompt, verbose=False):
+    """
+    Try each model in MODEL_CHAIN until one answers.
+
+    Why a chain: Google returns 503 "experiencing high demand" on popular
+    models at busy times. That is not our bug and not our key - it is
+    queueing. Rather than fail, we ask a less busy model the same question.
+
+    Uses urllib from the standard library rather than an SDK, because
+    Google deprecated google.generativeai and SDKs keep changing. The
+    REST endpoint does not.
+
+    Raises only if EVERY model fails. The caller then falls back to our
+    own dataset wording.
+    """
     if not API_KEY:
-        return None
-    try:
-        import google.generativeai as genai
-        genai.configure(api_key=API_KEY)
-        _model = genai.GenerativeModel(MODEL_NAME)
-        return _model
-    except Exception:
-        # Library not installed, or key rejected. Fall back silently.
-        return None
+        raise RuntimeError("no api key")
+
+    last_error = None
+
+    for model in MODEL_CHAIN:
+        for attempt in range(RETRIES_PER_MODEL):
+            try:
+                if verbose:
+                    print(f"  trying {model} (attempt {attempt + 1})...")
+                return _post(model, prompt)
+
+            except urllib.error.HTTPError as err:
+                last_error = f"{model}: HTTP {err.code}"
+                if verbose:
+                    print(f"    -> HTTP {err.code}")
+                # 503 = overloaded, worth retrying. Anything else is a
+                # real problem with this model, so move on immediately.
+                if err.code != 503:
+                    break
+                time.sleep(1.5 * (attempt + 1))   # brief backoff
+
+            except Exception as err:
+                last_error = f"{model}: {type(err).__name__}"
+                if verbose:
+                    print(f"    -> {type(err).__name__}")
+                break      # timeout or network issue - try the next model
+
+    raise RuntimeError(f"all models failed (last: {last_error})")
 
 
 PROMPT = """You are a medication safety communicator for an Indian healthcare app.
@@ -93,12 +173,10 @@ def explain(report, patient):
         )
         return report
 
-    model = _get_model()
-
-    if model is None:
+    if not API_KEY:
         return _fallback(report)
 
-    # Send Gemini only the minimum it needs. Never send names or IDs.
+    # Send Gemini only the minimum it needs. Never send patient names or IDs.
     slim = [
         {
             "medicine": a["medicine"],
@@ -117,8 +195,7 @@ def explain(report, patient):
     )
 
     try:
-        response = model.generate_content(prompt)
-        text = response.text.strip()
+        text = _call_gemini(prompt).strip()
 
         # Gemini sometimes wraps JSON in ```json fences. Strip them.
         text = text.replace("```json", "").replace("```", "").strip()
@@ -126,7 +203,6 @@ def explain(report, patient):
 
         report["summary"] = parsed.get("summary", "")
 
-        # Match each explanation back onto its alert, by position
         explanations = parsed.get("explanations", [])
         for i, alert in enumerate(alerts):
             if i < len(explanations):
@@ -141,7 +217,9 @@ def explain(report, patient):
         return report
 
     except Exception:
-        # Any failure at all - bad JSON, timeout, quota - use the fallback.
+        # Any failure at all - no key, no network, timeout, quota exhausted,
+        # malformed JSON - falls through to our own dataset wording.
+        # The demo cannot be killed by this file.
         return _fallback(report)
 
 

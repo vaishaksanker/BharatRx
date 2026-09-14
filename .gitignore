@@ -103,3 +103,5 @@ logs/
 ehthumbs.db
 Thumbs.db
 data/patients/*.json 
+backend/.env 
+backend/.env 
