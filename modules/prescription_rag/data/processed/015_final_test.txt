@@ -1,0 +1,22 @@
+total chunks: 45
+entries_found: 46
+skipped_deleted: 1
+skipped_no_drug: 0
+
+First 3 chunks:
+  entry 1: drug=Each uncoated bilayered tablet contains : Glimepiride IP + Voglibose I date=2020-01-14
+  entry 2: drug=Each Film coated tablet contains : Sildenafil + Dapoxetine (100mg + 60 date=2020-02-10
+  entry 3: drug=Each Uncoated Bilayered Tablet Contains: S(-) Amlodipine Besylate IP e date=2020-02-14
+
+Last 3 chunks:
+  entry 44: drug=Each Film Coated Tablets contains: Ivabradine Hydrochloride eq. to Iva date=2020-11-27
+  entry 45: drug=Each Film Coated Tablets contains: Metoprolol Succinate IP eq. to Meto date=2020-12-21
+  entry 46: drug=Each Film Coated Tablets contains: Carvedilol IP…………3.125mg Ivabradine date=2020-12-30
+
+Entry 8 (two-date):
+  drug=Sodium Alginate IP 250mg + Sodium Bicarbonate IP 133.5mg + Calcium Car
+  date=2020-04-09
+Entry 15 (deleted): False
+Entry 46 (last):
+  drug=Each Film Coated Tablets contains: Carvedilol IP…………3.125mg Ivabradine
+  date=2020-12-30

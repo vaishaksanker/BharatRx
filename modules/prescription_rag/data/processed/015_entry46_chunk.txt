@@ -1,0 +1,4 @@
+serial: 46
+drug: Each Film Coated Tablets contains: Carvedilol IP…………3.125mg Ivabradine Hydrochloride eq. to Ivabradine…………....5mg
+date: 2013-09-13
+indication: It is indicated for as substituted therapy in adult patients with normal sinus rhythm already contro

@@ -1,0 +1,23 @@
+{
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "bm25_k": 5,
+  "datasets": {
+    "ADR": 68,
+    "Alerts": 327,
+    "FDC": 8037,
+    "Pharmacovigilance": 378
+  },
+  "files_found": {
+    "ADR": true,
+    "Alerts": true,
+    "FDC": true,
+    "Pharmacovigilance": true
+  },
+  "total_documents": 8810,
+  "faiss_vectors": 8810,
+  "bm25_documents": 8810,
+  "verification": {
+    "faiss_matches_documents": true,
+    "bm25_matches_documents": true
+  }
+}

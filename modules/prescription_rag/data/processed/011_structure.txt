@@ -1,0 +1,105 @@
+Total pages: 28
+Page 1: 9 tables
+  Table 0: 36 rows, 34 non-empty
+     | S. |  | Drug Name | Composition
+     | No |  |  | 
+  Table 1: 10 rows, 10 non-empty
+    Each ml Contains:
+    Atropine
+  Table 2: 6 rows, 6 non-empty
+    Atropine Sulfate
+    Ophthalmic
+  Table 3: 2 rows, 2 non-empty
+    12-01-
+    2021
+  Table 4: 14 rows, 13 non-empty
+    For the treatment of
+    serious infections c
+  Table 5: 7 rows, 6 non-empty
+    Colistimethate
+    Sodium For
+  Table 6: 5 rows, 4 non-empty
+    Dapagliflozin
+    Tablets 10 mg
+  Table 7: 7 rows, 7 non-empty
+    tablets contains:
+    Dapagliflozin
+  Table 8: 2 rows, 2 non-empty
+    03-02-
+    2021
+Page 2: 18 tables
+  Table 0: 33 rows, 31 non-empty
+    4 |  | Brivaracetam |  | Each ml contains:
+Br
+     |  | Oral Solution |  | 
+  Table 1: 4 rows, 3 non-empty
+    Each ml contains:
+    Brivaracetam
+  Table 2: 4 rows, 4 non-empty
+    As adjunctive therap
+    treatment of partial
+  Table 3: 2 rows, 2 non-empty
+    03-02-
+    2021
+  Table 4: 5 rows, 4 non-empty
+    Drospirenone
+    Tablets 4 mg
+  Table 5: 4 rows, 4 non-empty
+    Each for uncoated
+    Tablets
+  Table 6: 4 rows, 4 non-empty
+    Drospirenone is a Pr
+    intended for its use
+  Table 7: 2 rows, 2 non-empty
+    15-02-
+    2021
+  Table 8: 13 rows, 12 non-empty
+    For the treatment of
+    motor fluctuations (
+  Table 9: 14 rows, 12 non-empty
+    Apomorphine
+    Hydrochloride 5
+  Table 10: 2 rows, 2 non-empty
+    16-02-
+    2021
+  Table 11: 7 rows, 5 non-empty
+    Thyroxine
+    Sodium Tablets
+Page 3: 12 tables
+  Table 0: 41 rows, 38 non-empty
+    9 |  | Aripiprazole |  | Each vial contains:
+
+     |  | powder and |  | 
+  Table 1: 8 rows, 6 non-empty
+    Maintenance treatmen
+    schizophrenia in adu
+  Table 2: 5 rows, 5 non-empty
+    Each vial contains:
+    Aripiprazole………3
+  Table 3: 2 rows, 2 non-empty
+    01-03-
+    2021
+  Table 4: 6 rows, 6 non-empty
+    Each ml contains:
+    Rebamipide…..2.0
+  Table 5: 2 rows, 2 non-empty
+    Indicated for the tr
+    dry eye signs and sy
+  Table 6: 2 rows, 2 non-empty
+    01-03-
+    2021
+  Table 7: 6 rows, 6 non-empty
+    Indicated in combina
+    proton pump inhibito
+  Table 8: 2 rows, 2 non-empty
+    01-03-
+    2021
+  Table 9: 6 rows, 5 non-empty
+    Pemetrexed for
+    injection
+  Table 10: 5 rows, 5 non-empty
+    Each vial contains:
+    Pemetrexed
+  Table 11: 2 rows, 2 non-empty
+    08-03-
+    2021

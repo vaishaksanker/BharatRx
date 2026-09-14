@@ -1,0 +1,24 @@
+Entry 42
+  block_len=253
+  dates_found=['27.11.2020']
+  block[:400]: 'Each Film Coated Tablets contains: \nRosuvastatin     Calcium IP       eq.         to  \nRosuvastatin …………20mg \nClopidogrel      Bisulphate IP     eq.         to  \nClopidogrel ……………75mg \nPost coronary intervention and acute \ncoronary syndrome. \n27.11.2020'
+
+Entry 43
+  block_len=486
+  dates_found=['27.11.2020']
+  block[:400]: 'Each Film Coated Tablets contains: \nRemogliflozin Etabonate……100mg \nVildagliptin…………………..50mg \nIt is indicated in adults aged 18 years and \nolder with type 2 diabetes mellitus: \n\uf0b7 \nTo improve glycaemic control when \nMetformin and one of mono-\ncomponents \nof \nFixed \ndose \ncombination \nof \nRemogliflozin \nEtabonate & Vildagliptin do not \nprovide adequate glycaemic control. \n\uf0b7 \nWhen already being trea'
+
+Entry 44
+  block_len=391
+  dates_found=['27.11.2020']
+  block[:400]: 'Each Film Coated Tablets contains: \nIvabradine Hydrochloride eq. to Ivabradine +  \nMetoprolol Tartrate IP (7.5mg+25mg, 5mg \n+50mg, 5mg+25mg & 7.5mg+50mg) \nFor the symptomatic treatment of chronic \nstable angina pectoris substitution therapy in \nadult patients with normal sinus rhythm \nalready controlled by Metoprolol and \nIvabradine taken concomitantly at the same \ndose level. \n27.11.2020'
+
+Entry 45
+  block_len=364
+  dates_found=['21.12.2020']
+  block[:400]: 'Each Film Coated Tablets contains: \nMetoprolol Succinate IP eq. to Metoprolol Tartrate \n(as extended release)+ Chlorthalidone IP + \nTelmisartan IP (47.5mg eq. to 50mg + 6.25mg + \n40mg & 23.75mg eq. to 25mg + 6.25mg+ 40mg) \nIt is indicated for the treatment of patients \nwith uncontrolled essential hypertension and \nstable coronary artery disease (CAD) \n21.12.2020'
+
+Entry 46
+  block_len=1103
+  dates_found=['30.12.2020', '23.09.2011', '04.04.2012', '13.09.2013']
+  block[:400]: 'Each Film Coated Tablets contains: \nCarvedilol IP…………3.125mg \nIvabradine \nHydrochloride \neq. \nto \nIvabradine…………....5mg \nIt is indicated for as substituted therapy in \nadult patients with normal sinus rhythm \nalready controlled by Ivabradine and \ncarvedilol taken concomitantly at the same  \ndoses level for: \nI. \nThe symptomatic treatment of \nchronic  stable angina pectoris in \ncoronary artery dise'
